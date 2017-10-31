@@ -2,14 +2,19 @@
 
 > This is a vue.js demo written by vuex ,vue ,vue-cli,vue-rooter
 
-## Build Setup
-
+## Commissioning
 ``` bash
 # install dependencies
 npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
+
+```
+## Build
+```bash
+# build for dist folder
+npm run build
 
 ```
 
