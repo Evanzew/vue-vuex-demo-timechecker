@@ -4,9 +4,12 @@ import Vue from 'vue';
 import store from './store';
 import VueResource from 'vue-resource';
 import App from './App';
+import './App.scss';
 import router from './router';
-import 'bootstrap/dist/css/bootstrap.css';
-import './css/app.css';
+import 'jquery';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap';
+
 Vue.config.productionTip = false;
 
 Vue.use(VueResource);

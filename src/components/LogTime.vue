@@ -22,28 +22,31 @@
 </template>
 
 <script>
+import { addTask } from '../service/taskList';
 export default {
   name: 'LogTime',
   data() {
     return {
-      date: '',
+      date: new Date(),
       totalTime: 0,
       comment: ''
-    }
+    };
   },
   methods: {
-    save() {
+    async save() {
       const plan = {
-        name: "Colin",
-        avatar: require('../assets/Colin.jpg'),
-        date: this.date,
-        totalTime: parseInt(this.totalTime),
+        name: this.$store.state.userName,
+        id: this.$store.state.list.length,
+        avatar: require('../assets/' + this.$store.state.userName + '.jpg'),
+        date: new Date(this.date),
+        totalTime: parseFloat(this.totalTime),
         comment: this.comment
       };
+      await addTask(plan);
       this.$store.dispatch('savePlan', plan);
-      this.$store.dispatch('addTotalTime', parseInt(this.totalTime));
-      this.$router.go(-1);
+      this.$store.dispatch('addTotalTime', parseFloat(this.totalTime));
+      this.$router.push('/time-entries');
     }
   }
-}
+};
 </script>

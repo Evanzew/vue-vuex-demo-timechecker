@@ -12,5 +12,8 @@ export default {
   },
   deletePlan({ commit }, index) {
     commit(types.DELETE_PLAN, index);
+  },
+  recordUserInfo({ commit }, userName) {
+    commit(types.RECORD_USERINFO, userName);
   }
 };

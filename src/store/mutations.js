@@ -12,5 +12,8 @@ export default {
   },
   [types.DELETE_PLAN](state, index) {
     state.list.splice(index, 1);
+  },
+  [types.RECORD_USERINFO](state, userName) {
+    state.userName = userName;
   }
 };
