@@ -1,4 +1,4 @@
-# vue-tutorial
+# vue-tutorial ![alt text](https://travis-ci.org/evanzew/vue-vuex-demo.svg?branch=master "Last push build")
 
 > This is a vue.js demo written by vuex ,vue ,vue-cli,vue-rooter,bootstrap,node,express,mongo
 
