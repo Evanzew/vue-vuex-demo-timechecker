@@ -34,18 +34,22 @@ export default {
   },
   methods: {
     async save() {
-      const plan = {
-        name: this.$store.state.userName,
-        id: this.$store.state.list.length,
-        avatar: require('../assets/' + this.$store.state.userName + '.jpg'),
-        date: new Date(this.date),
-        totalTime: parseFloat(this.totalTime),
-        comment: this.comment
-      };
-      await addTask(plan);
-      this.$store.dispatch('savePlan', plan);
-      this.$store.dispatch('addTotalTime', parseFloat(this.totalTime));
-      this.$router.push('/time-entries');
+      if (this.$store.state.userName != '') {
+        const plan = {
+          name: this.$store.state.userName,
+          id: this.$store.state.list.length,
+          avatar: require('../assets/' + this.$store.state.userName + '.jpg'),
+          date: new Date(this.date),
+          totalTime: parseFloat(this.totalTime),
+          comment: this.comment
+        };
+        await addTask(plan);
+        this.$store.dispatch('savePlan', plan);
+        this.$store.dispatch('addTotalTime', parseFloat(this.totalTime));
+        this.$router.push('/time-entries');
+      } else {
+        this.$router.push('/login');
+      }
     }
   }
 };

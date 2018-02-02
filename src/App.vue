@@ -3,7 +3,7 @@
     <nav class="navbar navbar-default" >
       <div class="container">
         <a class="navbar-brand" href="#">
-           <i class="glyphicon glyphicon-time"></i>
+           <i class="glyphicon glyphicon-calendar"></i>
            计划板 
         </a>
         <ul class="nav navbar-nav">
@@ -90,7 +90,3 @@ export default {
   }
 };
 </script>
-
-
-
-

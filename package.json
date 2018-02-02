@@ -8,8 +8,7 @@
     "dev": "node_modules/.bin/nodemon --exec better-npm-run startdev",
     "start": "npm run dev",
     "build": "node webpack.config/build.js",
-    "buildserver":
-      "rimraf serverDist && babel server -d serverDist -s --presets es2015,stage-3",
+    "buildserver": "rimraf serverDist && babel server -d serverDist -s --presets es2015,stage-3",
     "clean": "rimraf dist",
     "test": "npm test"
   },
@@ -110,5 +109,9 @@
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"]
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }

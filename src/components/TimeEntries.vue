@@ -13,11 +13,8 @@
             <div v-else-if="$route.path === '/time-entries/log-time'">
                 <h3>创建</h3>
             </div>
-
-            <hr>
-
             <router-view></router-view>
-
+            <hr>
             <div class="time-entries">
                 <p v-if="!plans.length">
                     <strong>还没有任何计划</strong>
