@@ -37,7 +37,7 @@
 
                                     <section class="row btn-row">
                                         <input class="btn btn-submit login-login" name="submit" accesskey="l" value="Login" tabindex="6" type="button"  @click="userLogin()">
-                                        <input class="btn btn-submit login-reset" name="reset" accesskey="c" value="Reset" tabindex="7" type="Reset">
+                                        <input class="btn btn-submit login-reset" name="reset" accesskey="c" value="Reset" tabindex="7" type="Reset" @click="userReset()">
                                     </section>
                                 </form>
                             </div>
@@ -54,8 +54,8 @@ export default {
   name: 'Login',
   data() {
     return {
-      userName: 'Evan.Zou',
-      password: '123'
+      userName: '',
+      password: ''
     };
   },
   methods: {
@@ -74,6 +74,10 @@ export default {
       } catch (error) {
         console.log(error);
       }
+    },
+    userReset() {
+      this.userName = '';
+      this.password = '';
     }
   }
 };
@@ -147,4 +151,3 @@ export default {
   }
 }
 </style>
-
