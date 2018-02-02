@@ -1,6 +1,6 @@
-# vue-tutorial ![alt text](https://travis-ci.org/evanzew/vue-vuex-demo.svg?branch=master "Last push build")
+# vue-timechecker ![alt text](https://travis-ci.org/evanzew/vue-vuex-demo.svg?branch=master 'Last push build')
 
-> This is a vue.js demo written by vuex ,vue ,vue-cli,vue-rooter,bootstrap,node,express,mongo
+> This is a vue.js timechecker demo written by vuex ,vue ,vue-cli,vue-rooter,bootstrap,node,express,mongo
 
 ## Database Structure
 
@@ -35,20 +35,20 @@ npm start
 
 > Login Page Preview
 
-![alt text](/src/assets/login.jpg "Login page preview")
+![alt text](/src/assets/login.jpg 'Login page preview')
 
 > Home Page Preview Before Login
 
-![alt text](/src/assets/preview-home_beforeLogin.jpg "Home page preview before login")
+![alt text](/src/assets/preview-home_beforeLogin.jpg 'Home page preview before login')
 
 > Home Page Preview
 
-![alt text](/src/assets/preview-home.jpg "Home page preview")
+![alt text](/src/assets/preview-home.jpg 'Home page preview')
 
 > Time Entries Page Preview
 
-![alt text](/src/assets/preview-time.jpg "Time entries page preview")
+![alt text](/src/assets/preview-time.jpg 'Time entries page preview')
 
 > Log Time Page Preview
 
-![alt text](/src/assets/preview-log.jpg "Log page preview")
+![alt text](/src/assets/preview-log.jpg 'Log page preview')
