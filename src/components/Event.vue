@@ -1,5 +1,5 @@
 <template>
-    <div class="row" :key="index">
+    <div class="row" v-bind:key="index">
         <div class="col-sm-2 user-details">
             <img :src="plan.avatar" class="avatar img-circle img-responsive" alt="">
             <p class="text-center">
@@ -21,7 +21,7 @@
         </div>
 
         <div class="col-sm-1">
-            <button class="btn btn-xs btn-danger delete-button" @click="deletePlan(index,plan.id)">
+            <button class="btn btn-xs btn-danger delete-button" v-on:click="deletePlan(index,plan)">
                 X
             </button>
         </div>
@@ -30,8 +30,20 @@
 
 <script>
 import { formatDate } from '../config/date';
+import { delTask } from '../service/taskList';
 export default {
-  props: { plan: { type: Object }, deletePlan: Function, index: Number },
+  props: { plan: { type: Object }, index: Number },
+  methods: {
+    async deletePlan(index, plan) {
+      var data = {
+        User_Name: this.$store.state.userName,
+        Id: plan.id
+      };
+      await delTask(data);
+      this.$store.dispatch('decTotalTime', plan.totalTime);
+      this.$store.dispatch('deletePlan', index);
+    }
+  },
   filters: {
     formatDate(time) {
       var date = new Date(time);

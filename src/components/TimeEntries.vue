@@ -24,9 +24,8 @@
                     <a class="list-group-item" v-for="(plan,index) in plans" :key="index">
                        <event 
                        v-bind:plan="plan" 
-                       v-bind:index="index"
-                        v-on:deletePlan="deletePlan">
-                        </event>
+                       v-bind:index="index">
+                       </event>
                     </a>
                 </div>
             </div>
@@ -79,17 +78,6 @@ export default {
         });
       }
     });
-  },
-  methods: {
-    async deletePlan(index, id) {
-      var data = {
-        User_Name: this.$store.state.userName,
-        Id: id
-      };
-      await delTask(data);
-      this.$store.dispatch('decTotalTime', this.plans[index].totalTime);
-      this.$store.dispatch('deletePlan', index);
-    }
   }
 };
 </script>
