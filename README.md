@@ -4,7 +4,23 @@
 
 ## Database Structure
 
+> Database structure
+
+```bash
+Path:.\vue-vuex-demo-timechecker\server\config\dbconfig.js
+var dataconfig = {
+  dataurl: 'localhost',
+  dataport: '27017',
+  dataname: 'Vue',
+  employeeInfo: 'User'
+};
+
+module.exports = dataconfig;
+```
+
 > Task structure
+
+Collection Name: TaskList
 
 ```bash
     "Id" : 0,
@@ -15,6 +31,8 @@
 ```
 
 > User structure
+
+Collection Name: User
 
 ```bash
   "User_Name" : "Evan.Zou",
