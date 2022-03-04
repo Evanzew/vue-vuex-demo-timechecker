@@ -46,10 +46,10 @@
       <ul class="info-list">
         <li class="text-center">
           <span class="strline">TimeChecker1.0 &nbsp;&nbsp;</span>
-          <a class="feet-link" href="mailto:Evan.Zou@perficient.com?subject=Issue on training  TimeChecker1.0 ">&nbsp;&nbsp;Report a problem&nbsp;&nbsp;</a>
+          <a class="feet-link" href="mailto:137020260@qq.com?subject=Issue on training  TimeChecker1.0 ">&nbsp;&nbsp;Report a problem&nbsp;&nbsp;</a>
         </li>
         <li class="text-center">
-          <span>Design By PERFICIENT/EVAN © 2017 Perficient, Inc.</span>
+          <span>Design By EVAN © 2017, Inc.</span>
         </li>
       </ul>
     </footer>

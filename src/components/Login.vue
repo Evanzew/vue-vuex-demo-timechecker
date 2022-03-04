@@ -1,14 +1,14 @@
 <template>
     <div>
         <div class="col-xs-12 col-md-12 col-sm-12 text-center xs-margin">
-            <img src="../assets/perficient-logo.png">
+            <img>
         </div>
         <div class="container" style="text-align: center; height: 100%">
             <table border="0" style="width: 100%; display: inline;">
                 <tbody>
                     <tr>
                         <td class="hidden-xs col-md-6 col-sm-6">
-                            <img src="../assets/perficient-left.png" style="width: 100%"></td>
+                            <img style="width: 100%"></td>
                         <td class="col-md-6 col-xs-12 col-sm-6">
                             <div id="login" style="border-radius: 6px; border: 1px solid #cccccc; text-align: center;" class="login-margin">
                                 <div class="login-header;" style="margin: 28px 0 10px 0">

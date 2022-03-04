@@ -51,9 +51,6 @@ npm start
 
 ## Demo Preview
 
-> Login Page Preview
-
-![alt text](/src/assets/login.jpg 'Login page preview')
 
 > Home Page Preview Before Login
 
